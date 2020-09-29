@@ -78,19 +78,19 @@ body {
 }
 
 /* source: https://stackoverflow.com/a/26078942/14132176 */
-.modal-dialog,
-.modal-content {
+.help-modal-dialog,
+.help-modal-content {
     /* 80% of window height */
     height: 95%;
 }
 
-.modal-body {
+.help-modal-body {
     /* 100% = dialog height, 120px = header + footer */
     max-height: calc(100% - 120px);
     overflow-y: scroll;
 }
 
-.modal-no-top-padding{
+.modal-custom-top-padding{
   padding-top: 10px;
 }
 
