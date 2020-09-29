@@ -70,11 +70,24 @@ body {
 .modal-content {
   /* padding: 5px;*/
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 18px;  
   /* font-family: "Orbitron", sans-serif;*/
   color: #2df1ff;
-  background: /*rgba(68, 31, 99, 0.712);*/ #02292cf3;
+  background: #02292cf3;
   border: 2px solid #2df1ff;
+}
+
+/* source: https://stackoverflow.com/a/26078942/14132176 */
+.modal-dialog,
+.modal-content {
+    /* 80% of window height */
+    height: 95%;
+}
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 120px);
+    overflow-y: scroll;
 }
 
 .modal-no-top-padding{

@@ -295,9 +295,8 @@ function UserInterface(uiChangeEvent) {
 
                 var page_track = 0;
 
-                $(n_button).click(function () {
+                $(n_button).click(function () {                    
                     this.blur();
-
                     if (page_track == 0) {
                         $(b_button).show();
                     }
@@ -315,10 +314,10 @@ function UserInterface(uiChangeEvent) {
                         pages.hide();
                         pages.eq(page_track).show();
                     }
+                    $("#helpModalBody").scrollTop(0);
                 });
 
-                $(b_button).click(function () {
-
+                $(b_button).click(function () {                    
                     if (page_track == 1) {
                         $(b_button).hide();
                     }
@@ -334,6 +333,8 @@ function UserInterface(uiChangeEvent) {
                         pages.hide();
                         pages.eq(page_track).show();
                     }
+                    $("#helpModalBody").scrollTop(0);
+
                 });
 
             }
