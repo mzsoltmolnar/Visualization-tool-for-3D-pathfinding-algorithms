@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Interplanetary Pathfinder - A visualization tool for 3-dimensional pathfinding algorithms">
+    <meta name="keywords" content="3D pathfinder, Interplanetary pathfinder, 3D visualization tool, Pathfinding algorithm">
+    <meta name="author" content="Zsolt Molnar - zsomoTech">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Visualization tool for 3D pathfinding algorithms</title>
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <script src="lib/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-slider.css">
+</head>
+<style>
+    .loading-modal-style {
+        border-radius: 5px;
+        font-size: 18px;
+        color: #2df1ff;
+        background: #02292cf3;
+        border: 2px solid #2df1ff;
+    }
+
+    .loading-modal-screen {
+        background-color: black;
+    }
+
+    .loading-text {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    /* source: https://loading.io/css/ */
+    .lds-dual-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+
+    .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid rgb(255, 0, 0);
+        border-color: #2df1ff transparent #2df1ff transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+    }
+
+    @keyframes lds-dual-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <!-- Loading Modal -->
+    <div class="modal fade loading-modal-screen" id="pageLoadingModal" tabindex="-1" role="dialog"
+        aria-labelledby="pageLoadingModalCenterTitle" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content loading-modal-style">
+                <div class="modal-body text-center loading-modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col loading-text">
+                                Loading...
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="lds-dual-ring"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Loading Modal -->
+
+    <div id="user-interface" class="user">
+        <!-- Inserting the external HTML snippet -->
+    </div>
+
+    <script src="lib/bootstrap.js"></script>
+    <script src="lib/three.js"></script>
+    <script src="lib/OrbitControls.js"></script>
+    <script src="view/visualizer_3d.js"></script>
+    <script src="view/user_interface.js"></script>
+    <script src="model/dijkstra.js"></script>
+    <script src="model/astar.js"></script>
+    <script src="model/sqhp_astar.js"></script>
+    <script src="model/euclideanhp_astar.js"></script>
+    <script src="lib/bootstrap-slider.js"></script>
+    <script src="controller/controller.js"></script>
+</body>
+
+</html>

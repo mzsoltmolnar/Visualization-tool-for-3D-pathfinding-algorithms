@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Making the whole page unselectable 
+  https://www.arungudelli.com/tutorial/css/disable-text-selection-in-html-using-user-select-css-property/*/
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  background-color: #010121;
+}
+
+.col {
+  padding: 0px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+/* Scrollbar code from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #320457;
+  border-radius: 2.5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7808d3;
+  border-radius: 2.5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #04c6d4;
+}
+
+/* costum padding for the container in the main panel */
+.container {
+  padding: 5px 15px 5px 15px;
+}
+
+/* styling the main and modal panel */
+.panel {
+  position: absolute;
+  width: 350px;
+  padding: 0px;
+  border-radius: 2.5px;
+  font-size: 18px;
+  font-family: "Orbitron", sans-serif;
+  color: #2df1ff;
+  background: rgba(104, 47, 151, 0.4);
+}
+
+.modal-content {
+  /* padding: 5px;*/
+  border-radius: 5px;
+  font-size: 18px;
+  /* font-family: "Orbitron", sans-serif;*/
+  color: #2df1ff;
+  background: /*rgba(68, 31, 99, 0.712);*/ #02292cf3;
+  border: 2px solid #2df1ff;
+}
+
+.modal-no-top-padding{
+  padding-top: 10px;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: #2df1ff;
+}
+
+.modal-highlight {
+  color: #fc681e;
+}
+
+.modal-h3 {
+  font-size: 28px;
+}
+
+.top-control-panel {
+  margin-top: 10px;
+}
+
+/* predefined button sizes */
+.square-button-42-42 {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+}
+
+.rectangle-button-68-42 {
+  width: 68px;
+  height: 42px;
+}
+/* END predefined button sizes */
+
+/* dropdown styling */
+#algorithm-dropdown {
+  width: 130px;
+  background-color: #04c6d4;
+}
+
+/* button styling */
+.button-colors {
+  background-color: #04c6d4;
+  border-width: 3px;
+  border-color: #04585e;
+}
+/*
+.button-colors:hover {
+  background-color: #55ffe8;
+}*/
+
+.button-colors:active {
+  background-color: #fc681e;
+}
+
+.button-colors:disabled {
+  background-color: #008b8b;
+  border-width: 0px;
+}
+
+.button-pressed-active {
+  background-color: #fc681e;
+  opacity: 1;
+}
+
+.button-colors:focus {
+  outline: 2px solid #7808d3;
+}
+
+.modal-corner-exit-color {
+  color: #fd5400;
+}
+.modal-corner-exit-color:hover {
+  color: #fd5400;
+}
+/* END button styling */
+
+/* button font styling */
+.button-inc-dec {
+  font-size: 1.3em;
+}
+
+#buttonOrbitControl {
+  font-size: 1em;
+}
+
+#buttonQuestionMark,
+#navbarCollapseToggle,
+#buttonStartPoint,
+#buttonEndPoint,
+#buttonWallPlace,
+#buttonClearWall,
+#buttonStartPauseAnimation,
+#buttonResetAnimation {
+  font-size: 1.3em;
+}
+
+/* size indicator number color and size */
+.size-indicator {
+  color: #fc681e;
+  font-size: 1.5em;
+}
+
+/* dimension control inscriptions */
+.dimension-inscription {
+  padding-top: 13px;
+}
+
+/* subpanel titles */
+.subpanel-inscription {
+  margin-bottom: 10px;
+}
+
+.subpanel-inscription,
+.visible-layer-inscription {
+  margin-top: 0px;
+}
+
+/* subpanels styling */
+.top-control-panel,
+.size-hide-layer-control-panel,
+.map-editing-control-panel,
+.animation-control-panel {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: #03767e5e;
+  /* border: 1px solid #04c6d4;*/
+}
+
+/* horizontal slider styling */
+.slider-handle {
+  background: #7808d3;
+  border-width: 3px;
+  border-color: #2df1ff;
+}
+
+.slider-track-high {
+  background: #13686e;
+}
+
+.slider-track-low {
+  background: #13686e;
+}
+
+.slider-selection {
+  background: #fc681e;
+}
+
+/* visible layer slider styling */
+#visible-layers-slider {
+  width: 300px;
+}
+
+.slider .bs-tooltip-bottom .tooltip-inner {
+  background-color: #04c6d4;
+  color: black;
+  font-family: "Orbitron", sans-serif;
+  font-size: 14px;
+}
+
+.visible-layers-slider {
+  margin-bottom: 30px;
+}
+
+/* animation speed slider styling */
+.animation-speed-slider {
+  margin-top: 15px;
+}
+/* END horizontal slider styling */
+
+/* Center align the panel if the screen is too narrow */
+@media (max-width: 991px) {
+  .panel {
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .panel {
+    top: 30px;
+    left: 30px;
+  }
+}
+
+/* Responsive panel if the screen height is too small
+   Collapsing animation to solve the artifacts
+*/
+@keyframes animExpanding {
+  0% {
+    height: 226px;
+  }
+  100% {
+    height: calc(100vh - 40px);
+  }
+}
+
+@keyframes animCollapsing {
+  0% {
+    height: calc(100vh - 40px);
+  }
+  100% {
+    height: 226px;
+  }
+}
+
+@media (max-height: 840px) {
+  #panel-base.set-panel-vh-max {
+    height: calc(100vh - 40px);
+    padding-right: 0px;
+    animation-name: animExpanding;
+    animation-duration: 0.3s;
+  }
+
+  #panel-base:not(.set-panel-vh-max) {
+    height: 226px;
+    animation-name: animCollapsing;
+    animation-duration: 0.3s;
+  }
+}
+/* END responsive panel */
