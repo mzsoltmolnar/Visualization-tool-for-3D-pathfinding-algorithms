@@ -19,6 +19,8 @@ The files are structured according to the MVC design pattern. This makes it easi
 
 ## The Pathfinding Algorithms
 
+In our case, in the 3D space, the algorithm has 3 degrees of freedom: left-right, back-forth and up-down. Each movement has a cost&nbsp;of&nbsp;1. No diagonal movements are allowed.
+
 - **Dijkstra's algorithm:** Implements the classical version of the algorithm by searching for the endpoint in each possible direction of the 3D space. This algorithm will find the possible shortest path.
 
 - **A-Star:** It is an extension of Dijkstra's algorithm by implementing heuristics. In contrast with Dijkstra's algorithm, A* calculates the direct distance from the actual position to the endpoint, based on their coordinates. This results in a possible shortest path. The algorithm will use the calculated direct distance to move first in the direction of the nodes with the lowest heuristic. This results in a more optimal runtime. In this case, the direct distance is calculated using the Manhattan distance.
@@ -26,3 +28,18 @@ The files are structured according to the MVC design pattern. This makes it easi
 - **Square heuristic penalized A-Star:** Same as the previous algorithm, but the direct distance is calculated with Euclidean distance without calculating the result's square root. In some cases, this approach results in a more optimal runtime than using the Manhattan distance, but the returned path is not always the shortest one.
 
 - **Euclidean heuristic penalized A-Star:** Same as the previous algorithm, but the direct distance is calculated with Euclidean distance instead of the Manhattan distance. The runtime is similar to A* with the Manhattan distance.
+
+
+## Tech Stack
+
+- [**jQuery v3.5.1:**](https://jquery.com/)
+
+- [**Bootstrap v4.5.2**](https://getbootstrap.com/)
+
+-  [**ThreeJS:**](https://threejs.org/) a lightweight JS 3D library that uses the WebGL renderer
+
+- [**bootstrap-slider.js v11.0.2:**](http://seiyria.com/bootstrap-slider/) extends the capabilities of the standard slider
+
+---
+
+[**Get in touch**](https://www.linkedin.com/in/zsolt-molnar)
