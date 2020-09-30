@@ -4,7 +4,7 @@ My goal with the project was to teach myself WebGL based graphics and related te
 
 The app is desktop- and mobile-optimized (Chrome browser recommended in both cases), [and you can access it here.](https://mzsoltmolnar.github.io/Visualization-tool-for-3D-pathfinding-algorithms/)
 
-Or view a short video demoing the apps main features here [apps main features here.](https://www.youtube.com/watch?v=W9REW3eIVRQ)
+Or view a short video demoing the [apps main features here.](https://www.youtube.com/watch?v=W9REW3eIVRQ)
 
 ## Project Structure
 The files are structured according to the MVC design pattern. This makes it easier to extend or edit the capabilities of the visualization tool. The app was mainly written in JavaScript, using HTML and CSS to design the 2D control interface.
