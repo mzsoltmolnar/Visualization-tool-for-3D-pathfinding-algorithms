@@ -1,12 +1,12 @@
 const MaterialPresets = {
     MATERIAL_BASE: new THREE.MeshLambertMaterial({ color: 0x000000 }),
-    MATERIAL_ALGORITHM_STEP: new THREE.MeshLambertMaterial({ color: 0xff3878 }), // done
-    MATERIAL_ALGORITHM_STEP_PREVIOUS: new THREE.MeshLambertMaterial({ color: 0x08ecfc }), // done
-    MATERIAL_ALGORITHM_STEP_PREVIOUS_TRANSPARENT: new THREE.MeshLambertMaterial({ color: 0xe8fbff, opacity: 0.1, transparent: true }), // done
-    MATERIAL_SHORTEST_PATH_STEP: new THREE.MeshLambertMaterial({ color: 0xfbfe47 }), // done
-    MATERIAL_POINT_START: new THREE.MeshLambertMaterial({ color: 0x4ddb2a }), // done
-    MATERIAL_POINT_END: new THREE.MeshLambertMaterial({ color: 0xfc681e }), // done
-    MATERIAL_WALL: new THREE.MeshPhongMaterial({ color: 0x5b00a6 }), // done 0x125cc4 ok/ish
+    MATERIAL_ALGORITHM_STEP: new THREE.MeshLambertMaterial({ color: 0xff3878 }),
+    MATERIAL_ALGORITHM_STEP_PREVIOUS: new THREE.MeshLambertMaterial({ color: 0x08ecfc }),
+    MATERIAL_ALGORITHM_STEP_PREVIOUS_TRANSPARENT: new THREE.MeshLambertMaterial({ color: 0xe8fbff, opacity: 0.1, transparent: true }),
+    MATERIAL_SHORTEST_PATH_STEP: new THREE.MeshLambertMaterial({ color: 0xfbfe47 }),
+    MATERIAL_POINT_START: new THREE.MeshLambertMaterial({ color: 0x4ddb2a }),
+    MATERIAL_POINT_END: new THREE.MeshLambertMaterial({ color: 0xfc681e }),
+    MATERIAL_WALL: new THREE.MeshPhongMaterial({ color: 0x5b00a6 }),
 };
 
 const GeometryPresets = {
