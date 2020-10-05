@@ -30,7 +30,7 @@ In our case, in the 3D space, the algorithm has 3 degrees of freedom: left-right
 - **Euclidean heuristic penalized A-Star:** Same as the previous algorithm, but the direct distance is calculated with Euclidean distance instead of the Manhattan distance. The runtime is similar to A* with the Manhattan distance.
 
 
-## Tech Stack
+## Technologies
 
 - [**jQuery v3.5.1:**](https://jquery.com/)
 
