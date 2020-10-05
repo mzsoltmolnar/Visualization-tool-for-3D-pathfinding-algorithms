@@ -40,6 +40,7 @@ In our case, in the 3D space, the algorithm has 3 degrees of freedom: left-right
 
 - [**bootstrap-slider.js v11.0.2:**](http://seiyria.com/bootstrap-slider/) extends the capabilities of the standard slider
 
+- **VS Code**
 ---
 
 [**Get in touch**](https://www.linkedin.com/in/zsolt-molnar)
