@@ -43,4 +43,4 @@ In our case, in the 3D space, the algorithm has 3 degrees of freedom: left-right
 - **VS Code**
 ---
 
-[**Get in touch**](https://www.linkedin.com/in/zsolt-molnar)
+[**Get in touch**](https://mzsoltmolnar.github.io/)
