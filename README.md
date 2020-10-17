@@ -44,7 +44,7 @@ In our case, in the 3D space, the algorithm has 3 degrees of freedom: left-right
 
 ## Technologies
 
-- [**jQuery v3.5.1:**](https://jquery.com/)
+- [**jQuery v3.5.1**](https://jquery.com/)
 
 - [**Bootstrap v4.5.2**](https://getbootstrap.com/)
 
