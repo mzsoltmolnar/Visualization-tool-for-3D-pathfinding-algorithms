@@ -6,6 +6,18 @@ The app is desktop- and mobile-optimized (Chrome browser recommended in both cas
 
 Or view a short video demoing the [apps main features here.](https://www.youtube.com/watch?v=W9REW3eIVRQ)
 
+### Table of contents
+
+<!--ts-->
+   * [Project Structure](#project-structure)
+   * [The Pathfinding Algorithms](#the-pathfinding-algorithms)
+   * [Technologies](#technologies)
+<!--te-->
+
+<p align="center">
+<img width=100% height=100% src="/resources-readme/editing.jpg">
+</p>
+
 ## Project Structure
 The files are structured according to the MVC design pattern. This makes it easier to extend or edit the capabilities of the visualization tool. The app was mainly written in JavaScript, using HTML and CSS to design the 2D control interface.
 
@@ -41,6 +53,7 @@ In our case, in the 3D space, the algorithm has 3 degrees of freedom: left-right
 - [**bootstrap-slider.js v11.0.2:**](http://seiyria.com/bootstrap-slider/) extends the capabilities of the standard slider
 
 - **VS Code**
----
 
-[**Get in touch**](https://mzsoltmolnar.github.io/)
+  <hr>
+  
+  #### For more projects and research, visit my website: https://mzsoltmolnar.github.io/
