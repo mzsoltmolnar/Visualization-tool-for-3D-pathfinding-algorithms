@@ -4,11 +4,16 @@
   padding: 0;
   /* Making the whole page unselectable 
   https://www.arungudelli.com/tutorial/css/disable-text-selection-in-html-using-user-select-css-property/*/
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
 }
 
 canvas {
@@ -28,34 +33,41 @@ body {
 }
 
 /* Scrollbar code from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+
 /* width */
+
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
+
 ::-webkit-scrollbar-track {
   background: #320457;
   border-radius: 2.5px;
 }
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #7808d3;
   border-radius: 2.5px;
 }
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
   background: #04c6d4;
 }
 
 /* costum padding for the container in the main panel */
+
 .container {
   padding: 5px 15px 5px 15px;
 }
 
 /* styling the main and modal panel */
+
 .panel {
   position: absolute;
   width: 350px;
@@ -70,7 +82,7 @@ body {
 .modal-content {
   /* padding: 5px;*/
   border-radius: 5px;
-  font-size: 18px;  
+  font-size: 18px;
   /* font-family: "Orbitron", sans-serif;*/
   color: #2df1ff;
   background: #02292cf3;
@@ -78,24 +90,23 @@ body {
 }
 
 /* source: https://stackoverflow.com/a/26078942/14132176 */
-.help-modal-dialog,
-.help-modal-content {
-    /* 80% of window height */
-    height: 95%;
+
+.help-modal-dialog, .help-modal-content {
+  /* 80% of window height */
+  height: 95%;
 }
 
 .help-modal-body {
-    /* 100% = dialog height, 120px = header + footer */
-    max-height: calc(100% - 120px);
-    overflow-y: scroll;
+  /* 100% = dialog height, 120px = header + footer */
+  max-height: calc(100% - 120px);
+  overflow-y: scroll;
 }
 
-.modal-custom-top-padding{
+.modal-custom-top-padding {
   padding-top: 10px;
 }
 
-.modal-header,
-.modal-footer {
+.modal-header, .modal-footer {
   border-color: #2df1ff;
 }
 
@@ -107,11 +118,16 @@ body {
   font-size: 28px;
 }
 
+.help-modal-buttons {
+  margin: 0.25rem;
+}
+
 .top-control-panel {
   margin-top: 10px;
 }
 
 /* predefined button sizes */
+
 .square-button-42-42 {
   width: 42px;
   height: 42px;
@@ -122,20 +138,24 @@ body {
   width: 68px;
   height: 42px;
 }
+
 /* END predefined button sizes */
 
 /* dropdown styling */
+
 #algorithm-dropdown {
   width: 130px;
   background-color: #04c6d4;
 }
 
 /* button styling */
+
 .button-colors {
   background-color: #04c6d4;
   border-width: 3px;
   border-color: #04585e;
 }
+
 /*
 .button-colors:hover {
   background-color: #55ffe8;
@@ -162,12 +182,15 @@ body {
 .modal-corner-exit-color {
   color: #fd5400;
 }
+
 .modal-corner-exit-color:hover {
   color: #fd5400;
 }
+
 /* END button styling */
 
 /* button font styling */
+
 .button-inc-dec {
   font-size: 1.3em;
 }
@@ -176,43 +199,36 @@ body {
   font-size: 1em;
 }
 
-#buttonQuestionMark,
-#navbarCollapseToggle,
-#buttonStartPoint,
-#buttonEndPoint,
-#buttonWallPlace,
-#buttonClearWall,
-#buttonStartPauseAnimation,
-#buttonResetAnimation {
+#buttonQuestionMark, #navbarCollapseToggle, #buttonStartPoint, #buttonEndPoint, #buttonWallPlace, #buttonClearWall, #buttonStartPauseAnimation, #buttonResetAnimation {
   font-size: 1.3em;
 }
 
 /* size indicator number color and size */
+
 .size-indicator {
   color: #fc681e;
   font-size: 1.5em;
 }
 
 /* dimension control inscriptions */
+
 .dimension-inscription {
   padding-top: 13px;
 }
 
 /* subpanel titles */
+
 .subpanel-inscription {
   margin-bottom: 10px;
 }
 
-.subpanel-inscription,
-.visible-layer-inscription {
+.subpanel-inscription, .visible-layer-inscription {
   margin-top: 0px;
 }
 
 /* subpanels styling */
-.top-control-panel,
-.size-hide-layer-control-panel,
-.map-editing-control-panel,
-.animation-control-panel {
+
+.top-control-panel, .size-hide-layer-control-panel, .map-editing-control-panel, .animation-control-panel {
   margin-bottom: 10px;
   padding: 15px;
   border-radius: 7px;
@@ -221,6 +237,7 @@ body {
 }
 
 /* horizontal slider styling */
+
 .slider-handle {
   background: #7808d3;
   border-width: 3px;
@@ -240,6 +257,7 @@ body {
 }
 
 /* visible layer slider styling */
+
 #visible-layers-slider {
   width: 300px;
 }
@@ -256,12 +274,15 @@ body {
 }
 
 /* animation speed slider styling */
+
 .animation-speed-slider {
   margin-top: 15px;
 }
+
 /* END horizontal slider styling */
 
 /* Center align the panel if the screen is too narrow */
+
 @media (max-width: 991px) {
   .panel {
     top: 20px;
@@ -281,6 +302,7 @@ body {
 /* Responsive panel if the screen height is too small
    Collapsing animation to solve the artifacts
 */
+
 @keyframes animExpanding {
   0% {
     height: 226px;
@@ -306,11 +328,11 @@ body {
     animation-name: animExpanding;
     animation-duration: 0.3s;
   }
-
   #panel-base:not(.set-panel-vh-max) {
     height: 226px;
     animation-name: animCollapsing;
     animation-duration: 0.3s;
   }
 }
+
 /* END responsive panel */

@@ -288,10 +288,10 @@ function UserInterface(uiChangeEvent) {
 
                 var n_button = document.createElement("button");
                 n_button.setAttribute("type", "button");
-                n_button.setAttribute("class", "rectangle-button-68-42 button-colors");
+                n_button.setAttribute("class", "rectangle-button-68-42 button-colors help-modal-buttons");
                 n_button.innerHTML = "Next";
 
-                $(this).find('.modal-footer').append(b_button).append(n_button);
+                $(this).find(".help-modal-control-buttons").append(b_button).append(n_button);
 
                 var page_track = 0;
 
