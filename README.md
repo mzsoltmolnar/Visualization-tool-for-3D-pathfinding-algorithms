@@ -48,7 +48,7 @@ In our case, in the 3D space, the algorithm has 3 degrees of freedom: left-right
 
 - [**Bootstrap v4.5.2**](https://getbootstrap.com/)
 
--  [**ThreeJS:**](https://threejs.org/) a lightweight JS 3D library that uses the WebGL renderer
+-  [**ThreeJS:**](https://threejs.org/) a lightweight JS 3D library that uses the WebGL renderer - Note: use the provided `three.js` file which contains an additional method
 
 - [**bootstrap-slider.js v11.0.2:**](http://seiyria.com/bootstrap-slider/) extends the capabilities of the standard slider
 
