@@ -11,7 +11,7 @@ Or view a short video demoing the [apps main features here.](https://www.youtube
 <!--ts-->
    * [Project Structure](#project-structure)
    * [The Pathfinding Algorithms](#the-pathfinding-algorithms)
-   * [Technologies](#technologies)
+   * [Dependencies](#dependencies)
 <!--te-->
 
 <p align="center">
@@ -42,7 +42,7 @@ In our case, in the 3D space, the algorithm has 3 degrees of freedom: left-right
 - **Euclidean heuristic penalized A-Star:** Same as the previous algorithm, but the direct distance is calculated with Euclidean distance instead of the Manhattan distance. The runtime is similar to A* with the Manhattan distance.
 
 
-## Technologies
+## Dependencies
 
 - [**jQuery v3.5.1**](https://jquery.com/)
 
@@ -52,7 +52,6 @@ In our case, in the 3D space, the algorithm has 3 degrees of freedom: left-right
 
 - [**bootstrap-slider.js v11.0.2:**](http://seiyria.com/bootstrap-slider/) extends the capabilities of the standard slider
 
-- **VS Code**
 
   <hr>
   
