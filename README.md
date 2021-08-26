@@ -21,7 +21,7 @@ Or view a short video demoing the [apps main features here.](https://www.youtube
 ## Project Structure
 The files are structured according to the MVC design pattern. This makes it easier to extend or edit the capabilities of the visualization tool. The app was mainly written in JavaScript, using HTML and CSS to design the 2D control interface.
 
-- **lib:** the used libraries
+- **lib:** used third-party libraries
 
 - **view:** HTML, JS and CSS files related to the 3D visualizer and the 2D user interface panel. Also contains the figures used for the help menu
 
